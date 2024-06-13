@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MARKET1" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="colorAccent">@color/cam</item>
+    </style>
+    
+    <style name="menuitcolor" parent="Base.Theme.MARKET1">
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="drawerArrowStyle">@style/changecolordrawertoogle</item>
+
+    </style>
+    <style name="capfe" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+    <style name="changecolordrawertoogle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/white</item>
+    </style>a
+    <style name="Theme.MARKET1" parent="Base.Theme.MARKET1" />
+
+    <declare-styleable name="PasswordEditText">
+        <attr name="useStrike" format="boolean"></attr>
+        <attr name="useValidate" format="boolean"/>
+     </declare-styleable>
+</resources>

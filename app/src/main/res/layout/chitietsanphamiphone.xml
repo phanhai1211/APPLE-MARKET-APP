@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@color/white">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:title=" "/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/Gray"
+            android:orientation="vertical">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <FrameLayout
+                        android:id="@+id/videoContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+
+
+                        <ImageView
+                            android:id="@+id/imgSanPham"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/iphone15promaxwhite" />
+                    </FrameLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:background="#f0f0f0">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Giá:"
+                            android:textStyle="bold"
+                            android:textSize="20sp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="end">
+
+                            <TextView
+                                android:id="@+id/tvgiatien"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="28,690,000  ₫"
+                                android:textColor="#e60000"
+                                android:textSize="20sp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/tvtensanpham"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Điện thoại Apple iPhone 15 Pro Max 256GB"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:layout_marginTop="8dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5/5 Đã bán 4,4k"
+                            android:textSize="14sp"
+                            android:layout_marginTop="4dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="16dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tenSanPhamTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chi tiết sản phẩm"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:id="@+id/moTaSanPhamTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mô tả sản phẩm"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:id="@+id/chiTietSanPhamTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="\u2022 Bảo hành 12 tháng\n\u2022 Sản phẩm gồm: máy + cáp sạc\n\u2022 Dung lượng bộ nhớ (ROM): Lưu trữ thoải mái 15.000 khung hình đỉnh cao, 15.000 bức ảnh Live, quay video 4K tới 18 giờ và 6.000 bài nhạc.\n\u2022 Thiết kế: Khung viền mới chất liệu Titanium - đạt kỷ lục viền máy siêu mảnh kết hợp 4 cạnh bo cong.\n\u2022 Màn hình: Độ sáng màn hình lên tới 2.000 nits đẳng cấp chưa từng thấy.\n\u2022 Camera: Ống kính tiềm vọng zoom 5x độc quyền cho khả năng thu phóng 'đạt đỉnh'.\n\u2022 Chipset: Vi xử lý A17 Pro ở tiến trình sản xuất 3nm giúp tốc độ xử lý và tối ưu điện năng tăng đột biến tới tới 35%.\n\u2022 Cổng sạc: 'Khai tử' sạc Lightning, mở ra kỷ nguyên mới với USB type C cho khả năng truyền dữ liệu siêu tốc độ lên đến 10Gbps.\n\u2022 Nút tác vụ: 'Xóa sổ' nút bật/tắt tiếng, thay thế bằng nút tác vụ hỗ trợ 9 chức năng khác nhau cho trải nghiệm sử dụng thêm thuận tiện\n\u2022 Màu sắc: Bảng màu mới lấy cảm hứng từ Titanium ấn tượng, độc đáo mang đến diện mạo sang chảnh và bắt mắt cho iPhone 15 Pro Max" />
+
+
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+        <Button
+            android:id="@+id/btnMuaNgay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mua Ngay"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@color/Gray" />
+        <ImageButton
+            android:id="@+id/imThemGioHang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_shopping_cart_white_24dp"
+            android:layout_weight="3"
+            android:padding="10dp"
+            android:background="@color/colorFacebook" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#FFFFFF" /> <!-- màu nền của button -->
+            <corners android:radius="5dp" /> <!-- bán kính của viền, bạn có thể điều chỉnh theo ý muốn -->
+            <stroke android:color="@color/cam" android:width="2dp"/> <!-- màu viền và độ dày của viền -->
+        </shape>
+    </item>
+</selector>

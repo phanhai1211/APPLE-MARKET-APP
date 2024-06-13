@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MARKET1</string>
+    <string name="Open">MỞ</string>
+    <string name="Close">Đóng</string>
+    <string name="facebook_app_id">402763675982651</string>
+    <string name="fb_login_protocol_scheme">fb402763675982651</string>
+    <string name="facebook_client_token">402763675982651|82d1155d92e41773ed268a7753ec0609</string>
+</resources>

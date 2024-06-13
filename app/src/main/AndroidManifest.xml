@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="MAKET1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MARKET1"
+        tools:targetApi="31">
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token"/>
+
+        <activity
+            android:name=".View.ManHinhChao.ManHinhChaoActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".View.TrangChu.TrangChuActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+        </activity>
+
+        <activity android:name=".View.Login_Register.Login_activity"
+            android:screenOrientation="portrait"
+            android:label="Đăng nhập/Đăng ký">
+        </activity>
+
+        <activity android:name=".View.ChiTietSanPham.ChiTietSanPhamActivity" />
+        <activity android:name=".View.Donhang.ThanhToan"></activity>
+        <activity android:name=".View.Donhang.Donhang" />
+    </application>
+</manifest>
